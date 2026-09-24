@@ -7,14 +7,14 @@ export default function Navbar({ isDark = true, currentPath = '/', onNavigate, o
       ? [
           { name: 'About', href: '#about' },
           { name: 'Projects', href: '#projects' },
-          { name: 'PlayGround', href: '/playground' },
+          // { name: 'PlayGround', href: '/playground' },
           { name: 'Contact', href: '#contact' },
         ]
       : [
           { name: 'Home', href: '/' },
           { name: 'About', href: '/#about' },
           { name: 'Projects', href: '/#projects' },
-          { name: 'PlayGround', href: '/playground',disabled },
+          // { name: 'PlayGround', href: '/playground'},
           { name: 'Contact', href: '#contact' },
         ]
   const { scrollY } = useScroll()
