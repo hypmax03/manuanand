@@ -219,7 +219,7 @@ export default function Hero({ isDark }) {
         {/* Cutout Photo of Manu Standing in Foreground with Smooth Entrance & Parallax */}
         <motion.div
           style={{ y: imageParallaxY }}
-          className="absolute bottom-0 left-1/2 -translate-x-1/2 z-25 pointer-events-none flex justify-center items-end w-full max-w-4xl h-[48vh] xs:h-[54vh] sm:h-[68vh] md:h-[76vh] lg:h-[84vh] min-h-0 sm:min-h-[460px] lg:min-h-[560px] max-h-[920px]"
+          className="absolute left-1/2 top-0 sm:top-auto sm:bottom-0 -translate-x-1/2 z-25 pointer-events-none flex justify-center items-start sm:items-end w-full max-w-4xl h-[48vh] xs:h-[54vh] sm:h-[68vh] md:h-[76vh] lg:h-[84vh] min-h-0 sm:min-h-[460px] lg:min-h-[560px] max-h-[920px]"
         >
           <motion.img
             src={Heroimg}
@@ -232,7 +232,7 @@ export default function Hero({ isDark }) {
               maskImage: 'linear-gradient(to bottom, black 82%, transparent 100%)',
               WebkitMaskImage: 'linear-gradient(to bottom, black 82%, transparent 100%)',
             }}
-            className={`h-full w-auto object-contain object-bottom scale-100 sm:scale-105 lg:scale-115 transform origin-bottom contrast-[1.04] opacity-85 sm:opacity-95 lg:opacity-100 transition-opacity duration-300 ${
+            className={`h-full w-auto object-contain object-top sm:object-bottom scale-100 -translate-y-8 sm:translate-y-0 sm:scale-105 sm:-translate-y-16 lg:scale-115 transform origin-top sm:origin-bottom contrast-[1.04] opacity-85 sm:opacity-95 lg:opacity-100 transition-opacity duration-300 ${
               isDark
                 ? 'drop-shadow-[0_25px_60px_rgba(0,0,0,0.95)]'
                 : 'drop-shadow-[0_12px_24px_rgba(15,23,42,0.06)]'
